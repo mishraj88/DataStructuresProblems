@@ -51,6 +51,7 @@ int sumOfMaxSubArray(int[] a){
 		tempBeginIndex=0;
 	}
 	
+	return sumMax;
 	
  
 }
