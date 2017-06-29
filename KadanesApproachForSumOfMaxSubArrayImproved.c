@@ -44,6 +44,7 @@ int maxSum(int[] arr){
 int[] compareArraySums(int index, int[] contestant_1, int[] contestant_2){
 	if(maxSum(contestant_1) > maxSum(contestant_2)) {
 		beginIndex=index;
+		endIndex=index;
 		return contestant_1;
 	}
 	else if(maxSum(contestant_1 ) == maxSum(contestant_2)){
@@ -53,6 +54,7 @@ int[] compareArraySums(int index, int[] contestant_1, int[] contestant_2){
 		return contestant_2;
 	} 
 	else{
+		int length=len(contestant_2);
 		beginIndex=index-length+1;
 		endIndex=index;
 		return contestant_2; 
