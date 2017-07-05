@@ -16,8 +16,8 @@ public class Graph {
         }
     }
 
-    public Node getNode(int id){
-        return HashMap.get(id);
+    public  Node getNode(int id){
+        return nodeLookUp.get(id);
     }
 
     public void addEdge(Node source, Node destination){
@@ -73,5 +73,6 @@ public class Graph {
             }
 
         }
+        return false;
     }
 }
