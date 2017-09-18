@@ -22,7 +22,8 @@ class GFG {
 		            int newEntry = sc.nextInt();
 		            int min = pq.peek();
 		            if(newEntry > min){
-		                pq.offer(sc.nextInt());
+		                //pq.offer(sc.nextInt());
+				    pq.offer(newEntry);
 		                //count++;
 		                pq.poll();
 		                //count--;
